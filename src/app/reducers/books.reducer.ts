@@ -16,6 +16,7 @@ export const initialState: State = {
   selectedBookId: null,
 };
 
+<<<<<<< HEAD
 export function reducer(state = initialState, action: book.Actions | collection.Actions): State {
   switch (action.type) {
     case book.SEARCH_COMPLETE:
@@ -66,6 +67,8 @@ export function reducer(state = initialState, action: book.Actions | collection.
     }
   }
 }
+=======
+>>>>>>> c7cd4c862f9c08ffd3eb1ba12b4c50b0e610f808
 
 /**
  * Because the data structure is defined within the reducer it is optimal to
