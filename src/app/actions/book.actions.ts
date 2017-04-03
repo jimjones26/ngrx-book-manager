@@ -1,22 +1,12 @@
 
 import { Action } from '@ngrx/store';
 import { Book } from '../models/book.model';
-import { type } from '../utils/util';
 
-/**
- * For each action type in an action group, make a simple
- * enum object for all of this group's action types.
- *
- * The 'type' utility function coerces strings into string
- * literal types and runs a simple check to guarantee all
- * action types in the application are unique.
- */
-export const ActionTypes = {
-  SEARCH: type('[Book] Search'),
-  SEARCH_COMPLETE: type('[Book] Search Complete'),
-  LOAD: type('[Book] Load'),
-  SELECT: type('[Book] Select'),
-};
+
+export const SEARCH = '[Book] Search';
+export const SEARCH_COMPLETE = '[Book] Search Complete';
+export const LOAD = '[Book] Load';
+export const SELECT = '[Book] Select';
 
 
 /**
@@ -27,25 +17,25 @@ export const ActionTypes = {
  * See Discriminated Unions: https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions
  */
 export class SearchAction implements Action {
-  type = ActionTypes.SEARCH;
+  readonly type = SEARCH;
 
   constructor(public payload: string) { }
 }
 
 export class SearchCompleteAction implements Action {
-  type = ActionTypes.SEARCH_COMPLETE;
+  readonly type = SEARCH_COMPLETE;
 
   constructor(public payload: Book[]) { }
 }
 
 export class LoadAction implements Action {
-  type = ActionTypes.LOAD;
+  readonly type = LOAD;
 
   constructor(public payload: Book) { }
 }
 
 export class SelectAction implements Action {
-  type = ActionTypes.SELECT;
+  readonly type = SELECT;
 
   constructor(public payload: string) { }
 }
