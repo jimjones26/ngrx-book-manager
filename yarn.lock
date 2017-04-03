@@ -112,6 +112,30 @@
   dependencies:
     tsickle "^0.21.0"
 
+"@ngrx/core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/core/-/core-1.2.0.tgz#882b46abafa2e0e6d887cb71a1b2c2fa3e6d0dc6"
+
+"@ngrx/db@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/db/-/db-2.0.1.tgz#c14a2204ab34c587e41bb5c57411877f8f832183"
+
+"@ngrx/effects@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-2.0.2.tgz#8255e29cc0276f108784c90481e3b96e6713154b"
+
+"@ngrx/router-store@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-1.2.5.tgz#1cff82c5488fab995872c6f0d57a29a7ac91e598"
+
+"@ngrx/store-devtools@^3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-3.2.4.tgz#2ce4d13bf34848a9e51ec87e3b125ed67b51e550"
+
+"@ngrx/store@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-2.2.1.tgz#316ec1e43aa5a0166e5e6e1aa2c34a4049386510"
+
 "@ngtools/json-schema@1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@ngtools/json-schema/-/json-schema-1.0.5.tgz#ad39037c70c88b245ac7267a71777646b6063d77"
@@ -5072,16 +5096,9 @@ write-file-atomic@^1.1.2:
     imurmurhash "^0.1.4"
     slide "^1.1.5"
 
-ws@1.1.1:
+ws@1.1.1, ws@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.1.tgz#082ddb6c641e85d4bb451f03d52f06eabdb1f018"
-  dependencies:
-    options ">=0.0.5"
-    ultron "1.0.x"
-
-ws@^1.0.1:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.4.tgz#57f40d036832e5f5055662a397c4de76ed66bf61"
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"
