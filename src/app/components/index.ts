@@ -4,9 +4,12 @@ import { MaterialModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { PipesModule } from '../pipes';
+import { LayoutComponent } from './layout';
 
 
-export const COMPONENTS = [];
+export const COMPONENTS = [
+  LayoutComponent
+];
 
 
 @NgModule({
