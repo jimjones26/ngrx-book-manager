@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { GoogleBooksService } from 'app/services/google-books.service';
@@ -12,8 +12,8 @@ import { GoogleBooksService } from 'app/services/google-books.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    CommonModule,
+    MaterialModule
   ],
   providers: [GoogleBooksService],
   bootstrap: [AppComponent]
