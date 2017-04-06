@@ -8,13 +8,19 @@ import { LayoutComponent } from './layout';
 import { ToolbarComponent } from './toolbar';
 import { SideNavComponent } from './sidenav';
 import { NavItemComponent } from './nav-item';
+import { BookPreviewListComponent } from './book-preview-list';
+import { BookPreviewComponent } from './book-preview';
+import { BookAuthorsComponent } from './book-authors';
 
 
 export const COMPONENTS = [
   LayoutComponent,
   SideNavComponent,
   NavItemComponent,
-  ToolbarComponent
+  ToolbarComponent,
+  BookPreviewListComponent,
+  BookPreviewComponent,
+  BookAuthorsComponent
 ];
 
 

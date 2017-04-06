@@ -14,7 +14,7 @@ import { Book } from '../models/book.model';
     <md-card>
       <md-card-title>My Collection</md-card-title>
     </md-card>
-    <!--<bc-book-preview-list [books]="books$ | async"></bc-book-preview-list>-->
+    <app-book-preview-list [books]="books$ | async"></app-book-preview-list>
   `,
   /**
    * Container components are permitted to have just enough styles
