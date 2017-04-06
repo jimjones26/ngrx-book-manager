@@ -20,6 +20,7 @@ import { CollectionPageComponent } from './containers/collection-page';
 import { FindBookPageComponent } from './containers/find-book-page';
 import { ViewBookPageComponent } from './containers/view-book-page';
 import { SelectedBookPageComponent } from './containers/selected-book-page';
+import { NotFoundPageComponent } from './containers/not-found-page';
 
 import { routes } from './routes';
 import { reducer } from './reducers';
@@ -32,7 +33,8 @@ import { schema } from './db';
     CollectionPageComponent,
     FindBookPageComponent,
     ViewBookPageComponent,
-    SelectedBookPageComponent
+    SelectedBookPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
