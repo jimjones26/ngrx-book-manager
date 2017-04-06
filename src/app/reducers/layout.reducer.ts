@@ -2,23 +2,23 @@ import * as layout from '../actions/layout.actions';
 
 
 export interface State {
-  showSidenav: boolean;
+  showSideNav: boolean;
 }
 
 const initialState: State = {
-  showSidenav: false,
+  showSideNav: false,
 };
 
 export function reducer(state = initialState, action: layout.Actions): State {
   switch (action.type) {
     case layout.CLOSE_SIDENAV:
       return {
-        showSidenav: false
+        showSideNav: false
       };
 
     case layout.OPEN_SIDENAV:
       return {
-        showSidenav: true
+        showSideNav: true
       };
 
     default:
@@ -26,4 +26,4 @@ export function reducer(state = initialState, action: layout.Actions): State {
   }
 }
 
-export const getShowSidenav = (state: State) => state.showSidenav;
+export const getShowSideNav = (state: State) => state.showSideNav;

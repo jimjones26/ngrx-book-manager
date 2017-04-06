@@ -15,6 +15,6 @@ import { Component, Input } from '@angular/core';
     }
   `]
 })
-export class SidenavComponent {
+export class SideNavComponent {
   @Input() open = false;
 }

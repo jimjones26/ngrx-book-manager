@@ -1,13 +1,13 @@
 <app-layout>
   <app-sidenav [open]="showSideNav$ | async">
-    <app-nav-item (activate)="closeSidenav()" routerLink="/" icon="book" hint="View your book collection">
+    <app-nav-item (activate)="closeSideNav()" routerLink="/" icon="book" hint="View your book collection">
       My Collection
     </app-nav-item>
-    <app-nav-item (activate)="closeSidenav()" routerLink="/book/find" icon="search" hint="Find your next book!">
+    <app-nav-item (activate)="closeSideNav()" routerLink="/book/find" icon="search" hint="Find your next book!">
       Browse Books
     </app-nav-item>
   </app-sidenav>
-  <app-toolbar (openMenu)="openSidenav()">
+  <app-toolbar (openMenu)="openSideNav()">
     Book Collection
   </app-toolbar>
   <router-outlet></router-outlet>

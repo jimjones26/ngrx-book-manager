@@ -20,19 +20,19 @@ export class AppComponent {
      * Selectors can be applied with the `select` operator which passes the state
      * tree to the provided selector
      */
-    this.showSideNav$ = this.store.select(fromRoot.getShowSidenav);
+    this.showSideNav$ = this.store.select(fromRoot.getShowSideNav);
   }
 
-  closeSidenav() {
+  closeSideNav() {
     /**
      * All state updates are handled through dispatched actions in 'container'
      * components. This provides a clear, reproducible history of state
      * updates and user interaction through the life of our application.
      */
-    this.store.dispatch(new layout.CloseSidenavAction());
+    this.store.dispatch(new layout.CloseSideNavAction());
   }
 
-  openSidenav() {
-    this.store.dispatch(new layout.OpenSidenavAction());
+  openSideNav() {
+    this.store.dispatch(new layout.OpenSideNavAction());
   }
 }
