@@ -16,6 +16,7 @@ import { GoogleBooksService } from 'app/services/google-books.service';
 import { BookExistsGuard } from './guards/book-exists.guard';
 
 import { AppComponent } from './app.component';
+import { CollectionPageComponent } from './containers/collection-page';
 
 import { routes } from './routes';
 import { reducer } from './reducers';
@@ -24,7 +25,8 @@ import { schema } from './db';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CollectionPageComponent
   ],
   imports: [
     BrowserModule,
