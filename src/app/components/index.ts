@@ -4,6 +4,7 @@ import { MaterialModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { PipesModule } from '../pipes';
+
 import { LayoutComponent } from './layout';
 import { ToolbarComponent } from './toolbar';
 import { SideNavComponent } from './sidenav';
@@ -12,6 +13,7 @@ import { BookPreviewListComponent } from './book-preview-list';
 import { BookPreviewComponent } from './book-preview';
 import { BookAuthorsComponent } from './book-authors';
 import { BookSearchComponent } from './book-search';
+import { BookDetailComponent } from './book-detail';
 
 
 export const COMPONENTS = [
@@ -22,7 +24,8 @@ export const COMPONENTS = [
   BookPreviewListComponent,
   BookPreviewComponent,
   BookAuthorsComponent,
-  BookSearchComponent
+  BookSearchComponent,
+  BookDetailComponent
 ];
 
 

@@ -18,6 +18,8 @@ import { BookExistsGuard } from './guards/book-exists.guard';
 import { AppComponent } from './app.component';
 import { CollectionPageComponent } from './containers/collection-page';
 import { FindBookPageComponent } from './containers/find-book-page';
+import { ViewBookPageComponent } from './containers/view-book-page';
+import { SelectedBookPageComponent } from './containers/selected-book-page';
 
 import { routes } from './routes';
 import { reducer } from './reducers';
@@ -28,7 +30,9 @@ import { schema } from './db';
   declarations: [
     AppComponent,
     CollectionPageComponent,
-    FindBookPageComponent
+    FindBookPageComponent,
+    ViewBookPageComponent,
+    SelectedBookPageComponent
   ],
   imports: [
     BrowserModule,
