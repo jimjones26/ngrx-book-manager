@@ -17,6 +17,7 @@ import { BookExistsGuard } from './guards/book-exists.guard';
 
 import { AppComponent } from './app.component';
 import { CollectionPageComponent } from './containers/collection-page';
+import { FindBookPageComponent } from './containers/find-book-page';
 
 import { routes } from './routes';
 import { reducer } from './reducers';
@@ -26,7 +27,8 @@ import { schema } from './db';
 @NgModule({
   declarations: [
     AppComponent,
-    CollectionPageComponent
+    CollectionPageComponent,
+    FindBookPageComponent
   ],
   imports: [
     BrowserModule,
