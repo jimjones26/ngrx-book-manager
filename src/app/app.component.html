@@ -1,17 +1,14 @@
 <app-layout>
-  <span>Hello Layout</span>
-  <!--
-  <bc-sidenav [open]="showSidenav$ | async">
-    <bc-nav-item (activate)="closeSidenav()" routerLink="/" icon="book" hint="View your book collection">
+  <app-sidenav [open]="showSideNav$ | async">
+    <app-nav-item (activate)="closeSidenav()" routerLink="/" icon="book" hint="View your book collection">
       My Collection
-    </bc-nav-item>
-    <bc-nav-item (activate)="closeSidenav()" routerLink="/book/find" icon="search" hint="Find your next book!">
+    </app-nav-item>
+    <app-nav-item (activate)="closeSidenav()" routerLink="/book/find" icon="search" hint="Find your next book!">
       Browse Books
-    </bc-nav-item>
-  </bc-sidenav>
-  <bc-toolbar (openMenu)="openSidenav()">
+    </app-nav-item>
+  </app-sidenav>
+  <app-toolbar (openMenu)="openSidenav()">
     Book Collection
-  </bc-toolbar>
-  -->
+  </app-toolbar>
   <router-outlet></router-outlet>
 </app-layout>

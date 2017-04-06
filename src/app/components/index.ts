@@ -5,10 +5,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { PipesModule } from '../pipes';
 import { LayoutComponent } from './layout';
+import { ToolbarComponent } from './toolbar';
+import { SidenavComponent } from './sidenav';
+import { NavItemComponent } from './nav-item';
 
 
 export const COMPONENTS = [
-  LayoutComponent
+  LayoutComponent,
+  SidenavComponent,
+  NavItemComponent,
+  ToolbarComponent
 ];
 
 
