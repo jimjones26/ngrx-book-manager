@@ -11,6 +11,7 @@ import { NavItemComponent } from './nav-item';
 import { BookPreviewListComponent } from './book-preview-list';
 import { BookPreviewComponent } from './book-preview';
 import { BookAuthorsComponent } from './book-authors';
+import { BookSearchComponent } from './book-search';
 
 
 export const COMPONENTS = [
@@ -20,7 +21,8 @@ export const COMPONENTS = [
   ToolbarComponent,
   BookPreviewListComponent,
   BookPreviewComponent,
-  BookAuthorsComponent
+  BookAuthorsComponent,
+  BookSearchComponent
 ];
 
 
